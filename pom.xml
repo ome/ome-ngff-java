@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ome</groupId>
+    <artifactId>ome-ngff-java</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+
+    <url>https://github.com/ome/ome-ngff-java</url>
+    <name>OME NGFF Java</name>
+    <description>Java code for OME NGFF metadata</description>
+    <inceptionYear>2022</inceptionYear>
+    <organization>
+        <name>Open Microscopy Environment</name>
+        <url>http://www.openmicroscopy.org/</url>
+    </organization>
+    <issueManagement>
+        <system>Trac</system>
+        <url>https://trac.openmicroscopy.org/ome</url>
+    </issueManagement>    
+    <licenses>
+        <license>
+             <!-- TODO -->
+            <name>???</name>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <!-- TODO -->
+        <developer>
+            <id>tischi</id>
+            <name>Christian Tischer</name>
+            <roles>
+                <role>lead</role>
+                <role>developer</role>
+                <role>debugger</role>
+                <role>reviewer</role>
+                <role>support</role>
+                <role>maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+    <contributors>
+    </contributors>
+    <mailingLists>
+        <!-- TODO -->
+    </mailingLists>
+    <properties>
+        <!-- TODO -->
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+                <configuration>
+                    <argLine>-Xmx4024m</argLine>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+      <repository>
+        <id>central</id>
+        <name>Central Repository</name>
+        <url>https://repo.maven.apache.org/maven2</url>
+      </repository>
+      <repository>
+        <id>ome</id>
+        <name>OME Artifactory</name>
+        <url>https://artifacts.openmicroscopy.org/artifactory/maven/</url>
+      </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>10.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.9.1</version>
+        </dependency>
+    </dependencies>
+</project>
